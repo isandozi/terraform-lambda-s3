@@ -22,7 +22,7 @@ Initialize Terraform: Initialize Terraform in the directory to download the nece
 
 `terraform init`
 
-Provide Input Variables: Open the terraform.tfvars file and provide values for the required input variables. Ensure to set the lambda_tfstate_bucket variable to the name of the S3 bucket created in the prerequisites.
+Provide Input Variables: Open the terraform.tfvars file and provide values for the required input variables. Ensure to set the lambda_tfstate_bucket variable to the name of the S3 bucket created in the prerequisites. The Terraform script will not execute until these values are provided.
 
 `lambda_tfstate_bucket = "your-s3-bucket-name"`
 
