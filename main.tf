@@ -6,8 +6,9 @@ terraform {
     required_version = ">= 1.0"
 
     backend "s3" {
-        # this s3 bucket needs to be created outside of Terraform
-        bucket = "lambda-terraform-states"
+        # Hard code bucket specified in terraform.tfvars file since we cannot pass in vari
+ables here
+        bucket = ""
         key = "terraform.tfstate"
         region = "us-east-1"
     }
