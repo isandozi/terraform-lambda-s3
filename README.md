@@ -30,6 +30,8 @@ Provide Input Variables: Open the terraform.tfvars file and provide values for t
 
 `application_name = "your-lambda-function-name"`
 
+Provide bucket name in backend s3: Open the main.tf file and provide the same value for the `lambda_tfstate_bucket` specified in terraform.tfvars file. This hard code is needed since we cannot pass in variables in this block.
+
 Review Terraform Plan: Optionally, review the Terraform plan to ensure correctness before applying changes.
 
 `terraform plan`
