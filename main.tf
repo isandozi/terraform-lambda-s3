@@ -6,11 +6,10 @@ terraform {
     required_version = ">= 1.0"
 
     backend "s3" {
-        # Hard code bucket specified in terraform.tfvars file since we cannot pass in vari
-ables here
-        bucket = ""
+        # Hard code bucket specified in terraform.tfvars file since we cannot pass in variables here
+        bucket = "terraform-lambda-states"
         key = "terraform.tfstate"
-        region = "us-east-1"
+        region = "us-east-2"
     }
 }
 
